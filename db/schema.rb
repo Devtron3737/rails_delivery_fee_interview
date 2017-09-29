@@ -10,6 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170929145112) do
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "store_id"
+    t.integer "number_of_products"
+    t.integer "number_of_heavy_products"
+    t.float   "delivery_fee"
+    t.float   "subtotal"
+    t.float   "tax"
+    t.float   "total"
+  end
+
+  create_table "stores", force: :cascade do |t|
+    t.string "name"
+  end
 
 end
