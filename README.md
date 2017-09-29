@@ -1,7 +1,6 @@
 # README
 
 Rails interview question!
-About 1 hr
 
 Create a feature that will receive an order,
 and based on the order's store,
@@ -69,7 +68,7 @@ so, the order above would have a delivery fee of $8!
     delivery_fee is $0
 
   else
-    
+
     delivery_fee is $10
 
 so, the order above would have a delivery fee of $0
